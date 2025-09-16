@@ -168,7 +168,10 @@ class Camera:
             width=self.camera_resolution[1],
             viewMatrix=self.view_mat,
             projectionMatrix=self.proj_mat,
-            lightColor = [0.2,0.2,0.2],
+            lightColor = [0.6,0.6,0.6],
+            lightSpecularCoeff  = 0.5,
+            lightDiffuseCoeff = 0.5,
+            lightAmbientCoeff = 0.5,
         )
 
         rgbaImg = np.asarray(rgbaImg).reshape(
