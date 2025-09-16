@@ -168,6 +168,7 @@ class Camera:
             width=self.camera_resolution[1],
             viewMatrix=self.view_mat,
             projectionMatrix=self.proj_mat,
+            lightColor = [0,0,1],
         )
 
         rgbaImg = np.asarray(rgbaImg).reshape(
