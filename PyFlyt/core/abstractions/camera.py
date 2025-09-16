@@ -77,7 +77,7 @@ class Camera:
             fov=camera_FOV_degrees,
             aspect=float(camera_resolution[1] / camera_resolution[0]),
             nearVal=0.1,
-            farVal=255.0,
+            farVal=600.0,
         )
         self.use_gimbal = use_gimbal
         self.camera_angle_degrees = camera_angle_degrees
@@ -168,7 +168,7 @@ class Camera:
             width=self.camera_resolution[1],
             viewMatrix=self.view_mat,
             projectionMatrix=self.proj_mat,
-            lightColor = [0,0,1],
+            lightColor = [0.2,0.2,0.2],
         )
 
         rgbaImg = np.asarray(rgbaImg).reshape(
